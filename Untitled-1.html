@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            Confirm Purchase
+        </title>
+        <link rel = "icon" type = "image/png" href = "logo.png">
+        <link rel="stylesheet" href="purchase.css" />
+
+        
+    </head>
+
+    <body>
+
+
+        <div class="page">
+            <img src="logo.png" alt="WÆV "/>
+
+            <form action="Sweaters.html">
+                <input type="hidden" name="func_name" value="ADD_USER">
+
+            <h2>Please fill out your shipping information</h2>
+                <p>
+                    Enter Shipping Address (Street name & number):<br />
+                    <textarea name="address" row="2" cols="30"></textarea>
+                </p>
+                <p>
+                    Postal code:<br />
+                    <input type="text" name="postal" style="width: 70px;"/>
+                </p>
+               
+                <p>
+                    Select Shipping Type <br/>
+                    <input type="radio" name="Rship" value="option1"/>Regular Shipping $4.99 (5-7 Business Days)<br/>
+                    <input type="radio" name="Eship" value="option2"/>Express Shipping $9.99 (2-3 Business Days)<br/>
+                </p>
+
+            <h2>Please fill out your billing information</h2>
+                
+                <p>
+                    Enter your card number:<br />
+                    <input type="text" name="card"/>
+                </p>
+                <p style="font-weight: bold;">
+                    Enter your card's three digit<br />security number (CVC):<br />
+                    <input type="password" name="cvc" style="width: 50px;"/>
+                </p>
+                <input class="submit" type="submit" name="__exclude__Submit" value="Confirm purchase and return to shopping">
+                <input class="cancel" type="submit" value="Cancel and return">
+            </form>
+            
+       </div>
+
+       
+    </body>
+</html>
