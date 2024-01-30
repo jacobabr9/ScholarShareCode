@@ -1,0 +1,85 @@
+div.page {
+
+    box-shadow: 0px 5px 10px 8px rgb(43, 41, 41);
+    background-color:#faf7f5;
+    width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 5%;
+    margin-top: 50px;
+}
+
+h2 {
+
+    font-family: calibri; 
+    padding-left: 3%;
+}
+
+img {
+
+    height: 300px; 
+    width: auto; 
+    margin-top: 7%; 
+    margin-right: 15%;
+    float:right;
+    animation: rotation 3.5s infinite linear;
+}
+
+p{
+    font-family: calibri;
+}
+
+p::first-line {
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+
+form {
+    padding-left: 3%;
+    
+   
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+input.cancel {
+    float: right;
+    color: white;
+    background-color: #a87d52;
+    margin-right: 40%;
+    padding: 5px;
+    
+}
+
+input.submit {
+    color: white;
+    background-color: #a87d52;
+    margin-right: 40%;
+    padding: 5px;
+}
+
+input.submit:hover, input.cancel:hover {
+    background-color: #b28c66;
+}
+
+input, textarea {
+    background-color: lightblue;
+}
+
+input:hover, textarea:hover {
+    background-color: #F0F8FF;
+}
+
+body {
+
+    background: powderblue;
+    background: linear-gradient( #F0F8FF, #6495ED);
+}
+
