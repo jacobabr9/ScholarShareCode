@@ -12,7 +12,7 @@ ul {
 
     overflow: hidden; 
 
-    background-color: #b28c66; 
+    background-color: #101c9a;
 
 } 
 
@@ -41,7 +41,7 @@ li a, .dropbtn {
 
 li a:hover, .dropdown:hover .dropbtn { 
 
-    background-color: #a87d52; 
+    background-color: #a87d52;
 
 } 
 
@@ -58,7 +58,7 @@ li.dropdown {
 
     position: absolute; 
 
-    background-color: #F0F8FF; 
+    background-color: #F0F8FF;
 
     min-width: 150px; 
 
@@ -107,10 +107,9 @@ header {
 }
 
 .hero {
-    background-image: url("../images/beachclubmtl_17332863_412123639139772_2247301015831314432_n.jpg")  ;
-    background-size: cover;
+   /* background-image: url("../images/beachclubmtl_17332863_412123639139772_2247301015831314432_n.jpg");*/
     background-color: whitesmoke;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     margin: none;
     position: relative;
@@ -120,16 +119,15 @@ header {
 }
 .headings {
     
-    padding-top: 2em;
-    
+    padding-top: 1em;
+    margin: none;
 }
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Calibri', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
     text-align: center;
-    
-    
-
+    color: #3a38f7;
+    margin: -10;
 
 }
 h4 {
@@ -181,6 +179,7 @@ h5 {
     font-size: 1.5em;
     font-family: 'Calibri', 'Gill Sans MT',  'Trebuchet MS', sans-serif; 
     color: grey;
+
 }
 .footerul{
     background-color:none;
