@@ -109,7 +109,7 @@ header {
 .hero {
     background-image: url("../images/beachclubmtl_17332863_412123639139772_2247301015831314432_n.jpg")  ;
     background-size: cover;
-    background-color: #0d0d0d;
+    background-color: red;
     height: 100vh;
     width: 100%;
     margin: none;
