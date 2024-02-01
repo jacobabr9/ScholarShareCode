@@ -1,85 +1,222 @@
-div.page {
-
-    box-shadow: 0px 5px 10px 8px rgb(43, 41, 41);
-    background-color:#faf7f5;
-    width: 55%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 10px;
-    padding-bottom: 5%;
-    margin-top: 50px;
+/*nav*/
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
 }
 
-h2 {
+ul { 
+
+    list-style-type: none; 
+
+    overflow: hidden; 
+
+    background-color: #b28c66; 
+
+} 
+
+li { 
+
+    float: left; 
+
+} 
+
+li a, .dropbtn { 
+
+    display: inline-block; 
+
+    color: white; 
 
     font-family: calibri; 
-    padding-left: 3%;
+
+    text-align: center; 
+
+    padding: 20px 30px; 
+
+    text-decoration: none; 
+
+} 
+
+
+li a:hover, .dropdown:hover .dropbtn { 
+
+    background-color: #a87d52; 
+
+} 
+
+
+li.dropdown { 
+
+    display: inline-block; 
+
+} 
+
+.dropdown-content { 
+
+    display: none; 
+
+    position: absolute; 
+
+    background-color: #F0F8FF; 
+
+    min-width: 150px; 
+
+    box-shadow: 0px 8px 16px rgb(43, 41, 41); 
+
+} 
+
+.dropdown-content a {    
+
+    color: black; 
+
+    padding: 12px 16px; 
+
+    text-decoration: none; 
+
+    display: block; 
+
+    text-align: left; 
+
+} 
+
+.dropdown-content a:hover {background-color:  #6495ED} 
+
+
+
+.dropdown:hover .dropdown-content { 
+    z-index: 5;
+
+    display: block; 
+
+} 
+a:visited {
+    color: indigo;
 }
+/*nav end */
 
-img {
-
-    height: 300px; 
-    width: auto; 
-    margin-top: 7%; 
-    margin-right: 15%;
-    float:right;
-    animation: rotation 3.5s infinite linear;
-}
-
-p{
-    font-family: calibri;
-}
-
-p::first-line {
-    padding-bottom: 2%;
-    font-weight: bold;
-}
-
-form {
-    padding-left: 3%;
-    
+header {
+    z-index: 5;
+    margin: none;
+    padding: 0;
    
+
 }
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
+.main-content {
+    z-index: 1;
 }
 
-input.cancel {
-    float: right;
-    color: white;
-    background-color: #a87d52;
-    margin-right: 40%;
-    padding: 5px;
+.hero {
+    background-image: url("../images/beachclubmtl_17332863_412123639139772_2247301015831314432_n.jpg")  ;
+    background-size: cover;
+    background-color: #0d0d0d;
+    height: 100vh;
+    width: 100%;
+    margin: none;
+    position: relative;
+
+
+
+}
+.headings {
+    
+    padding-top: 3em;
     
 }
+h1 {
+    font-size: 5rem;
+    font-family: 'Calibri', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+    text-align: center;
+    
+    
 
-input.submit {
-    color: white;
+
+}
+h4 {
+    font-size: 2.5rem;
+    font-family: 'Calibri', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.btn-a, .btn-b {
+    text-align: center;
+
+    
+}
+button {
+    font-family: 'Calibri', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: solid 5px #F0F8FF;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+
+
+}
+button:hover{
+   background-color: #ffffff;
+   color: black;
+}
+button:active {
+    background-color: blue;
+    
+}
+.youtube {
+    height: 100vh;
+    width: 100%;
+    background-color: #6495ED;
+}
+
+/* footer*/
+.footer {
+    display: flex;
+    justify-content: space-around;
     background-color: #a87d52;
-    margin-right: 40%;
-    padding: 5px;
+
+
+}
+h5 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Calibri', 'Gill Sans MT',  'Trebuchet MS', sans-serif; 
+    color: #F0F8FF;
+}
+.footerul{
+    background-color:none;
+    margin: none;
+   
+
+    
+
 }
 
-input.submit:hover, input.cancel:hover {
-    background-color: #b28c66;
+.footerli{
+    float: none;
+    text-align: center;
+    font-family: 'Calibri', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
 }
-
-input, textarea {
-    background-color: lightblue;
+#insta {
+    background-image: url("../images/icons/instagram.png");
+    background-position: center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+   
+    
 }
-
-input:hover, textarea:hover {
-    background-color: #F0F8FF;
+#twitter {
+    background-image: url("../images/icons/twitter.png");
+    background-position: center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+   
+    
 }
-
-body {
-
-    background: powderblue;
-    background: linear-gradient( #F0F8FF, #6495ED);
+#facebook {
+    background-image: url("../images/icons/facebook.png");
+    background-position: center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+   
+    
 }
-
