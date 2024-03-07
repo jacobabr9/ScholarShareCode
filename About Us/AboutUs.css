@@ -71,11 +71,17 @@ header {
 }
 
 .container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .main-content {
-    z-index: 1;
+    text-align: center;
+    max-width: 800px; /* Adjust as needed */
 }
 
 .hero {
