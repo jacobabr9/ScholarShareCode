@@ -18,7 +18,9 @@ ul {
 
 li { 
 
-    float: left; 
+    float: left;
+    margin: 0;
+    padding: 0;
 
 } 
 
@@ -36,12 +38,22 @@ li a, .dropbtn {
 
     text-decoration: none; 
 
-} 
+}
 
+ .logo {
+         float: left;
+         margin: 0;
+         padding: 0;
+}
+
+.profile-btn {
+    float: right;
+    margin-right: 20px; /* Adjust the margin as needed */
+}
 
 li a:hover, .dropdown:hover .dropbtn { 
 
-    background-color: #a87d52;
+    background-color: #50b7f2;
 
 } 
 
