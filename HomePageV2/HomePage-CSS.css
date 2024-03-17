@@ -1,0 +1,141 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light Grey */
+    color: black; /* Black */
+}
+
+/* Logo styles */
+.logo {
+    width: 120px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Adjust spacing around the logo */
+}
+
+/* Header styles */
+header {
+    background-color: #101c9a; /* #101c9a */
+    padding: 10px 20px; /* Adjust padding top and bottom */
+    color: white; /* White */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.top-nav {
+    flex: 1; /* Fill remaining space */
+    text-align: center; /* Center align the nav */
+}
+
+nav.top-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav.top-nav ul li {
+    display: inline-block; /* Change display to inline-block */
+    vertical-align: middle; /* Vertically center the buttons */
+}
+
+nav.top-nav ul li:not(:last-child) {
+    margin-right: 20px; /* Adjust spacing between buttons */
+}
+
+nav.top-nav ul li a {
+    text-decoration: none;
+    color: white; /* White */
+    transition: background-color 0.3s; /* Smooth transition effect */
+    padding: 20px 30px; /* Increase padding to make buttons larger */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Bold text */
+    line-height: 30px; /* Adjust line height to vertically center the text */
+}
+
+nav.top-nav ul li.profile {
+    margin-right: 0; /* Remove margin to float to the far right */
+    float: right; /* Float to the right */
+}
+
+nav.top-nav ul li.profile img {
+    width: 40px; /* Adjust width of profile image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav.top-nav ul li a:hover,
+nav.top-nav ul li.profile:hover { /* Add specific rule for profile button */
+    background-color: #add8e6; /* Light blue */
+    color: #101c9a; /* Change text color when hovered */
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: white; /* White */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #101c9a; /* #101c9a */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: black; /* Black */
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #101c9a; /* #101c9a */
+    color: white; /* White */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #0b135c; /* Darker shade of #101c9a */
+}
+
+/* Features section styles */
+.features {
+    background-color: white; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features h2 {
+    color: #101c9a; /* #101c9a */
+    margin-bottom: 20px;
+}
+
+.features ul {
+    color: black; /* Black */
+    list-style-type: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #101c9a; /* #101c9a */
+    color: white; /* White */
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
