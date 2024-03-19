@@ -74,6 +74,67 @@ nav.top-nav ul li.profile:hover { /* Add specific rule for profile button */
     color: #101c9a; /* Change text color when hovered */
 }
 
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #101c9a; /* Top navigation background color */
+    color: white; /* Top navigation text color */
+    padding: 10px;
+}
+
+.main-content {
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #333; /* Deep grey */
+    width: 250px; /* Sidebar width */
+    height: 100vh; /* Full height of viewport */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    color: white; /* Text color */
+}
+
+.sidebar .dropdown-btn {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: inherit;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.sidebar .dropdown-container {
+    display: none;
+    background-color: #444; /* Darker grey */
+    padding-left: 20px;
+}
+
+.sidebar .dropdown-container a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.sidebar .dropdown-container a:hover {
+    background-color: #555; /* Dark grey */
+}
+
+/* Main content styles */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+
 /* Main styles */
 main {
     padding: 20px;
