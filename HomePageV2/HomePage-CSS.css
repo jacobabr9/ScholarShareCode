@@ -111,21 +111,32 @@ header {
 }
 
 .sidebar .dropdown-container {
+    position: relative;
+}
+
+.sidebar .dropdown-content {
     display: none;
+    position: absolute;
     background-color: #444; /* Darker grey */
-    padding-left: 20px;
-}
-
-.sidebar .dropdown-container a {
     padding: 10px;
-    text-decoration: none;
-    display: block;
-    color: white;
-    transition: background-color 0.3s;
+    top: 100%;
+    left: 0;
+    width: 100%;
 }
 
-.sidebar .dropdown-container a:hover {
+.sidebar .dropdown-content a {
+    display: block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar .dropdown-content a:hover {
     background-color: #555; /* Dark grey */
+}
+
+.sidebar .dropdown-container:hover .dropdown-content {
+    display: block;
 }
 
 /* Main content styles */
