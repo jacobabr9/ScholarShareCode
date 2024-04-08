@@ -1,4 +1,19 @@
-/* CSS code from homepage.css */
+/* CSS code from aboutus.css */
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar-slot {
+    margin-bottom: 20px;
+    background-color: #ddd;
+    height: 100px; /* Adjust height as needed */
+}
+
+/* Remaining styles from homepage.css */
 html, body {
     padding: 0;
     margin: 0;
