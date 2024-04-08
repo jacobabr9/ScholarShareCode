@@ -121,7 +121,7 @@ main {
     background-image: url('background.jpg'); /* Replace 'background-image.jpg' with the path to your image file */
     background-size: cover;
     background-position: center;
-    height: 40vh;
+    height: 35vh;
     width: 160vh;
     margin: 0 auto;
     display: flex;
@@ -203,7 +203,7 @@ main {
     align-items: center; /* Center the text vertically */
     background-color: #101c9a; /* #101c9a */
     color: #101c9a; /* White */
-    padding: 10px 20px;
+    padding: 10px 35px;
     text-decoration: none;
     border-radius: 5px;
     width: 25vh;
