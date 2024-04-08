@@ -7,3 +7,18 @@ def home(request):
 
 def academic_integrity(request):
     return render(request, 'scholar_share/academic_integrity.html')
+
+def civil_engineering(request):
+    return render(request, 'scholar_share/civil_engineering.html')
+
+def software_engineering(request):
+    return render(request, 'scholar_share/software_engineering.html')
+
+def mechanical_engineering(request):
+    return render(request, 'scholar_share/mechanical_engineering.html')
+
+def chemical_engineering(request):
+    return render(request, 'scholar_share/chemical_engineering.html')
+
+def industrial_engineering(request):
+    return render(request, 'scholar_share/industrial_engineering.html')
