@@ -8,6 +8,9 @@ def home(request):
 def academic_integrity(request):
     return render(request, 'scholar_share/academic_integrity.html')
 
+def contact_us(request):
+    return render(request, 'scholar_share/contact_us.html')
+
 def civil_engineering(request):
     return render(request, 'scholar_share/civil_engineering.html')
 
