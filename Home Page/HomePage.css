@@ -183,6 +183,7 @@ main {
 .features h2 {
     color: #101c9a;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .features ul {
@@ -220,6 +221,22 @@ main {
          1px  1px 0 white;
     position: relative;
     overflow: hidden;
+}
+
+.btn-science {
+    background-image: url('science.jpg'); /* Replace with path to your image */
+}
+
+.btn-technology {
+    background-image: url('it.jpg'); /* Replace with path to your image */
+}
+
+.btn-engineering {
+    background-image: url('engineering.jpg'); /* Replace with path to your image */
+}
+
+.btn-math {
+    background-image: url('math.jpeg'); /* Replace with path to your image */
 }
 
 .btn-lecture-notes {
