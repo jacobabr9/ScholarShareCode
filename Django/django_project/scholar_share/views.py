@@ -5,6 +5,10 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm
 # Create your views here.
 
+def login(request):
+    return render(request, 'scholar_share/login.html')
+
+
 # def login(request):
 #     if request.method == 'POST':
 #         form = AuthenticationForm(request, request.POST)
