@@ -31,3 +31,18 @@ def chemical_engineering(request):
 
 def industrial_engineering(request):
     return render(request, 'scholar_share/industrial_engineering.html')
+
+def biochemistry_page(request):
+    return render(request, 'scholar_share/biochemistry_page.html')
+
+def biology_page(request):
+    return render(request, 'scholar_share/biology_page.html')
+
+def chemistry_page(request):
+    return render(request, 'scholar_share/chemistry_page.html')
+
+def earth_space_page(request):
+    return render(request, 'scholar_share/earth_space_page.html')
+
+def physics_page(request):
+    return render(request, 'scholar_share/physics_page.html')

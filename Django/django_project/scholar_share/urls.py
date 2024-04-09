@@ -11,5 +11,10 @@ urlpatterns = [
     path('software_engineering/',views.software_engineering, name='scholar_share-software_engineering'),
     path('mechanical_engineering/',views.mechanical_engineering, name='scholar_share-mechanical_engineering'),
     path('chemical_engineering/',views.chemical_engineering, name='scholar_share-mechanical_engineering'),
-    path('industrial_engineering/',views.industrial_engineering, name='scholar_share-industrial_engineering')
+    path('industrial_engineering/',views.industrial_engineering, name='scholar_share-industrial_engineering'),
+    path('biochemistry_page/',views.biochemistry_page, name='scholar_share-biochemistry_page'),
+    path('biology_page/',views.biology_page, name='scholar_share-biology_page'),
+    path('chemistry_page/',views.chemistry_page, name='scholar_share-chemistry_page'),
+    path('earth_space_page/',views.earth_space_page, name='scholar_share-earth_space_page'),
+    path('physics_page/',views.physics_page, name='scholar_share-physics_page')
 ]
