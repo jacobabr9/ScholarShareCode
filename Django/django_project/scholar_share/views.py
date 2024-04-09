@@ -64,3 +64,9 @@ def geometry(request):
 
 def probability_and_statistics(request):
     return render(request, 'scholar_share/probability_and_statistics.html')
+
+def information_management_page(request):
+    return render(request, 'scholar_share/information_management_page.html')
+
+def information_technology_page(request):
+    return render(request, 'scholar_share/information_technology_page.html')

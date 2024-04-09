@@ -21,5 +21,7 @@ urlpatterns = [
     path('calculus/',views.calculus, name='scholar_share-calculus_page'),
     path('computational_mathematics/',views.computational_mathematics, name='scholar_share-computational_mathematics_page'),
     path('geometry/',views.geometry, name='scholar_share-geometry_page'),
-    path('probability_and_statistics/',views.probability_and_statistics, name='scholar_share-probability_and_statistics_page')
+    path('probability_and_statistics/',views.probability_and_statistics, name='scholar_share-probability_and_statistics_page'),
+    path('information_management_page/',views.information_management_page, name='scholar_share-information_management_page'),
+    path('information_technology_page',views.information_technology_page, name='scholar_share-information_technology_page')
 ]
