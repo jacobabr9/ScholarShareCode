@@ -32,6 +32,9 @@ def chemical_engineering(request):
 def industrial_engineering(request):
     return render(request, 'scholar_share/industrial_engineering.html')
 
+def electrical_engineering(request):
+    return render(request, 'scholar_share/electrical_engineering.html')
+
 def biochemistry_page(request):
     return render(request, 'scholar_share/biochemistry_page.html')
 
