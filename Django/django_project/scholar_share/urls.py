@@ -27,5 +27,6 @@ urlpatterns = [
     path('geometry/',views.geometry, name='scholar_share-geometry_page'),
     path('probability_and_statistics/',views.probability_and_statistics, name='scholar_share-probability_and_statistics_page'),
     path('information_management_page/',views.information_management_page, name='scholar_share-information_management_page'),
-    path('information_technology_page',views.information_technology_page, name='scholar_share-information_technology_page')
+    path('information_technology_page',views.information_technology_page, name='scholar_share-information_technology_page'),
+    # path('login/', views.login, name='login')
 ]
