@@ -16,5 +16,10 @@ urlpatterns = [
     path('biology_page/',views.biology_page, name='scholar_share-biology_page'),
     path('chemistry_page/',views.chemistry_page, name='scholar_share-chemistry_page'),
     path('earth_space_page/',views.earth_space_page, name='scholar_share-earth_space_page'),
-    path('physics_page/',views.physics_page, name='scholar_share-physics_page')
+    path('algebra/',views.algebra, name='scholar_share-algebra_page'),
+    path('applied_mathematics/',views.applied_mathematics, name='scholar_share-applied_mathematics_page'),
+    path('calculus/',views.calculus, name='scholar_share-calculus_page'),
+    path('computational_mathematics/',views.computational_mathematics, name='scholar_share-computational_mathematics_page'),
+    path('geometry/',views.geometry, name='scholar_share-geometry_page'),
+    path('probability_and_statistics/',views.probability_and_statistics, name='scholar_share-probability_and_statistics_page')
 ]

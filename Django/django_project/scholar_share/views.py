@@ -46,3 +46,21 @@ def earth_space_page(request):
 
 def physics_page(request):
     return render(request, 'scholar_share/physics_page.html')
+
+def algebra(request):
+    return render(request, 'scholar_share/algebra.html')
+
+def applied_mathematics(request):
+    return render(request, 'scholar_share/applied_mathematics.html')
+
+def calculus(request):
+    return render(request, 'scholar_share/calculus.html')
+
+def computational_mathematics(request):
+    return render(request, 'scholar_share/computational_mathematics.html')
+
+def geometry(request):
+    return render(request, 'scholar_share/geometry.html')
+
+def probability_and_statistics(request):
+    return render(request, 'scholar_share/probability_and_statistics.html')
