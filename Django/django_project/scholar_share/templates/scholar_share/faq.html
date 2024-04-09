@@ -1,0 +1,260 @@
+{% extends "scholar_share/base.html" %}
+{% block title %}
+FAQ Page
+{% endblock %}
+
+{% block content %}
+<style>
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #9aa2f5, #d1d3f0);
+    color: black; /* Black */
+}
+
+/* Logo styles */
+.logo {
+    width: 85px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Adjust spacing around the logo */
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* Header styles */
+header {
+    background-color: #101c9a; /* #101c9a */
+    padding: 10px 20px; /* Adjust padding top and bottom */
+    color: white; /* White */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.top-nav {
+    flex: 1; /* Fill remaining space */
+    text-align: center;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+nav.top-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav.top-nav ul li {
+    display: inline-block; /* Change display to inline-block */
+    vertical-align: middle; /* Vertically center the buttons */
+}
+
+nav.top-nav ul li:not(:last-child) {
+    margin-right: 20px; /* Adjust spacing between buttons */
+}
+
+nav.top-nav ul li a {
+    text-decoration: none;
+    color: white; /* White */
+    transition: background-color 0.3s; /* Smooth transition effect */
+    padding: 20px 30px; /* Increase padding to make buttons larger */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Bold text */
+    line-height: 30px; /* Adjust line height to vertically center the text */
+}
+
+nav.top-nav ul li.profile {
+    margin-right: 0; /* Remove margin to float to the far right */
+    float: right; /* Float to the right */
+    margin: 0 30px;
+}
+
+nav.top-nav ul li.profile img {
+    width: 40px; /* Adjust width of profile image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav.top-nav ul li a:hover,
+nav.top-nav ul li.profile:hover { /* Add specific rule for profile button */
+    background-color: #add8e6; /* Light blue */
+    color: #101c9a; /* Change text color when hovered */
+}
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #101c9a; /* Top navigation background color */
+    color: white; /* Top navigation text color */
+    padding: 10px;
+}
+
+.main-content {
+    display: flex;
+}
+
+/* Main content styles */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: white; /* White */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 130vh;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    color: #101c9a; /* #101c9a */
+    margin-bottom: 20px;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.hero p {
+    color: black; /* Black */
+    margin-bottom: 10px;
+}
+
+
+
+/* Your existing CSS styles */
+/* Add additional styles for FAQ section */
+.faq {
+    background-color: white; /* White */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 130vh;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.faq h3 {
+    font-size: 24px;
+    color: #101c9a;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h2 {
+    font-size: 20px; /* Updated font size */
+    color: #333; /* Updated color */
+}
+
+.question p {
+    font-size: 16px;
+    color: #888;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #101c9a; /* #101c9a */
+    color: white; /* White */
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+
+<body>
+    <header>
+        <!-- <img src="logo2.png" alt="ScholarShare Logo" class="logo"> -->
+        <nav class="top-nav">
+            <ul>
+                <li><a href="/Home Page/HomePage.html">Home</a></li>
+                <li><a href="/About Us/AboutUs.html">About Us</a></li>
+                <li><a href="/Contact Us/CONTACTME.html">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <!-- <li class="profile"><img src="profile3.png" alt="Profile"></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>FAQ</h2>
+            <p>Our FAQ page provides answers to common questions about accessing and using the study materials available on ScholarShare. Learn about accessing resources, their availability for offline use, update frequency, community engagement opportunities, and how to contribute your own materials. Whether you're a student, educator, or enthusiast, our FAQ page aims to provide clarity and support to enhance your learning experience.</p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="question">
+                <h2>How can I access the study materials?</h2>
+                <p>You can access the study materials by clicking on the provided links under each category.</p>
+            </div>
+            <div class="question">
+                <h2>Are the resources free to use?</h2>
+                <p>Yes, all resources listed on ScholarShare are free to use for educational purposes.</p>
+            </div>
+            <div class="question">
+                <h2>How often are new resources added?</h2>
+                <p>New resources are added regularly, typically at the beginning of each academic term.</p>
+            </div>
+            <div class="question">
+                <h2>Can I contribute my own study materials?</h2>
+                <p>Absolutely! ScholarShare welcomes contributions from scholars and educators. You can submit your materials for review.</p>
+            </div>
+            <div class="question">
+                <h2>Is there a limit to the number of resources I can access?</h2>
+                <p>No, there is no limit. You can access as many resources as you need.</p>
+            </div>
+            <div class="question">
+                <h2>Can I download the study materials for offline use?</h2>
+                <p>Yes, most study materials are available for download. Look for the download option provided with each resource.</p>
+            </div>
+            <div class="question">
+                <h2>Are the study materials updated regularly?</h2>
+                <p>Yes, we strive to keep all study materials up-to-date. However, it's always a good idea to check for the latest version.</p>
+            </div>
+            <div class="question">
+                <h2>Can I request specific study materials to be added?</h2>
+                <p>Absolutely! If you have specific study materials in mind that you'd like to see added, please contact us with your suggestions.</p>
+            </div>
+            <div class="question">
+                <h2>Are there any discussion forums or communities for users?</h2>
+                <p>Yes, we have discussion forums and communities where users can interact, ask questions, and share insights related to the study materials.</p>
+            </div>
+
+            <!-- Add more FAQ questions and answers as needed -->
+        </section>
+
+        <!-- Existing sections for study materials -->
+        <!-- Add your existing study materials sections here -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ScholarShare. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+{% endblock %}

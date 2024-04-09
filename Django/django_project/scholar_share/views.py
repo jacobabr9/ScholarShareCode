@@ -18,6 +18,9 @@ def about_us(request):
 def contact_us(request):
     return render(request, 'scholar_share/contact_us.html')
 
+def faq(request):
+    return render(request, 'scholar_share/faq.html')
+
 def upload_resources_page(request):
     return render(request, 'scholar_share/upload_resources_page.html')
 
