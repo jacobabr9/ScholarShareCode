@@ -22,57 +22,65 @@
     .mt-20 {
       margin-top: 20px;
     }
+    .error-message {
+      color: red;
+    }
+    .signup-form {
+      display: none;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="login-container">
       <h2 class="text-center">Login</h2>
-      <form>
+      <form id="loginForm" action="/home/" method="post">
+        {% csrf_token %}
         <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
-          <input type="text" class="form-control" id="username" placeholder="Enter username">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+          <span id="emailError" class="error-message" style="display: none;">Please enter a valid @cmail.carleton.ca email</span>
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter password">
+          <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
         </div>
-        <button type="submit" class="btn" style="color: white; background-color: blue; border-color: blue;"><a href="/home" style="color: white;">Login</a></button>
+        <button type="submit" class="btn btn-primary" style="color: white;">Login</button>
       </form>
       <div class="mt-20 text-center">
-        <p>Don't have an account? <a href="/home#signup">Sign Up</a></p>
+        <p>Don't have an account? <a href="#" id="signupLink">Sign Up</a></p>
       </div>
     </div>
-    <div id="signup" class="login-container mt-20" style="display: none;">
+    <div class="signup-container login-container">
       <h2 class="text-center">Sign Up</h2>
-      <form>
+      <form id="signupForm" action="" method="post" class="signup-form">
+        {% csrf_token %}
         <div class="mb-3">
-          <label for="fullname" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="fullname" placeholder="Enter full name">
+          <label for="signupEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="signupEmail" name="email" placeholder="Enter email">
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email">
+          <label for="signupPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="signupPassword" name="password" placeholder="Enter password">
         </div>
-        <div class="mb-3">
-          <label for="newpassword" class="form-label">Password</label>
-          <input type="password" class="form-control" id="newpassword" placeholder="Enter password">
-        </div>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <button type="submit" class="btn btn-primary" style="color: white;">Sign Up</button>
       </form>
-      <div class="mt-20 text-center">
-        <p>Already have an account? <a href="">Login</a></p>
-      </div>
     </div>
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.querySelector("a[href='/home#signup']").addEventListener("click", function(e) {
-        e.preventDefault();
-        document.getElementById("signup").style.display = "block";
-        document.querySelector("a[href='/home#signup']").style.display = "none";
-      });
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      var emailInput = document.getElementById("email").value;
+      if (!emailInput.endsWith("@cmail.carleton.ca")) {
+        event.preventDefault();
+        document.getElementById("emailError").style.display = "block";
+      }
+    });
+
+    document.getElementById("signupLink").addEventListener("click", function(event) {
+      event.preventDefault();
+      var signupForm = document.querySelector(".signup-form");
+      signupForm.style.display = (signupForm.style.display === "none") ? "block" : "none";
     });
   </script>
 </body>
